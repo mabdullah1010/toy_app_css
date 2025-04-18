@@ -1,2 +1,32 @@
-<h1>Home#about</h1>
-<p>Find me in app/views/home/about.html.erb</p>
+<div class="container py-5">
+  <h1 class="mb-4 text-center">About our Micropost App</h1>
+</div>
+<% card_text = "
+The Micropost Project is a lightweight web application inspired by Twitter, designed to allow users to share short messages, known as microposts, with others in a community. Users can create an account, log in securely, and then begin posting short updates which are visible on the main feed. Other users can view these posts and engage with them by liking the ones they enjoy or find meaningful.
+
+A key focus of this project was ensuring a smooth and secure user experience, which we achieved by implementing several important validation checks. For instance, we validate the content of each micropost to ensure that users do not post empty or excessively long messages. We also validate usernames and other user input to prevent duplicate names or the use of invalid characters. These checks help maintain the integrity of the application and promote respectful and meaningful interactions.
+
+In addition, we have structured the app to be modular and scalable, setting the stage for future enhancements such as commenting, following users, or real-time notifications. This project showcases essential concepts of web development such as authentication, database relationships, and user interaction. Overall, the Micropost Project is a great example of building a social media platform from the ground up with a focus on usability and functionality." %>
+
+
+<div style="align-items: center; margin: auto;" class="card" style="width: 50rem;">
+  <%= image_tag 'social_media.jpg', class: 'card-img-top', alt: 'Your Alt Text' %>
+  <div class="card-body">
+    <p class="card-text"><%= card_text %></p>
+  </div>
+</div>
+
+
+
+<div class="card" style="width: 18rem;">
+  <div class="card-header">
+    We Have:
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Users</li>
+    <li class="list-group-item">Microposts</li>
+  </ul>
+</div>
+<br>
+<br>
+<br>

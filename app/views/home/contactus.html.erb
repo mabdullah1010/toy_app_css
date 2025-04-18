@@ -1,2 +1,61 @@
-<h1>Home#contactus</h1>
-<p>Find me in app/views/home/contactus.html.erb</p>
+<div class="container py-5">
+  <h1 class="mb-4 text-center">Contact Us</h1>
+
+  <div class="row g-4">
+    <!-- Map image -->
+    <div class="col-lg-6">
+      <div class="card shadow-sm">
+        <img src="<%= asset_path('map_screenshot.jpg') %>" class="card-img-top" alt="Our Location on Map">
+        <div class="card-body">
+          <h5 class="card-title">Our Location</h5>
+          <p class="card-text">Located in the heart of New London, just a short walk from downtown and the waterfront.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-6">
+      <div class="card shadow-sm h-100">
+        <div class="card-body">
+          <h5 class="card-title"><i class="bi bi-telephone-fill me-2"></i>Get In Touch</h5>
+          <p><strong>Phone:</strong> (860) 123-4567</p>
+          <p><strong>Email:</strong> <a href="mailto:contact@conncoll.edu">contact@conncoll.edu</a></p>
+          <p><strong>Address:</strong><br>
+            270 Mohegan Parkway Avenue,<br>
+            New London, CT 06320<br>
+            United States
+          </p>
+          <p><strong>Office Hours:</strong><br> Monday – Friday, 9:00 AM – 5:00 PM</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-5">
+    <h3 class="mb-3 text-center">Send Us a Message</h3>
+    <form class="row g-3">
+      <div class="col-md-6">
+        <label for="contactName" class="form-label">Your Name</label>
+        <input type="text" class="form-control" id="contactName" placeholder="William Tarimo">
+      </div>
+      <div class="col-md-6">
+        <label for="contactEmail" class="form-label">Email</label>
+        <input type="email" class="form-control" id="contactEmail" placeholder="wtarimo@conncoll.edu">
+      </div>
+      <div class="col-12">
+        <label for="contactSubject" class="form-label">Subject</label>
+        <input type="text" class="form-control" id="contactSubject" placeholder="How can we help you?">
+      </div>
+      <div class="col-12">
+        <label for="contactMessage" class="form-label">Message</label>
+        <textarea class="form-control" id="contactMessage" rows="5" placeholder="Write your message here..."></textarea>
+      </div>
+      <div class="col-12 text-center">
+        <button type="submit" class="btn btn-primary px-5">Send Message</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="text-center mt-5 text-muted small">
+    We typically respond within 24 hours on business days.
+  </div>
+</div>

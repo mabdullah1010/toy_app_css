@@ -1,2 +1,76 @@
-<h1>Home#help</h1>
-<p>Find me in app/views/home/help.html.erb</p>
+<div class="container py-5">
+  <h1 class="mb-4 text-center">Need Help? We're Here for You</h1>
+
+  <!-- Alert -->
+  <div class="alert alert-info text-center" role="alert">
+    If you're in an emergency situation, please call 911 or a local crisis line immediately.
+  </div>
+
+  <div class="row g-4">
+    <div class="col-md-6">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title"><i class="bi bi-geo-alt-fill me-2"></i>Our Office</h5>
+          <p class="card-text">
+            270 Mohegan Parkway Avenue<br>
+            New London, CT 06320<br>
+            United States
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Phone & Email -->
+    <div class="col-md-6">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title"><i class="bi bi-telephone-fill me-2"></i>Contact Us</h5>
+          <p class="card-text mb-1"><strong>Phone:</strong> (860) 123-4567</p>
+          <p class="card-text mb-1"><strong>Email:</strong> <a href="mailto:help@conncoll.edu">help@conncoll.edu</a></p>
+          <p class="card-text"><strong>Hours:</strong> Mon–Fri, 9:00 AM–5:00 PM</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-5">
+    <h3 class="mb-3">Emergency Hotlines</h3>
+    <ul class="list-group">
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        National Suicide Prevention Lifeline
+        <span class="badge bg-danger rounded-pill">1-800-273-8255</span>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        Campus Safety
+        <span class="badge bg-primary rounded-pill">(860) 456-7890</span>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        Title IX Coordinator
+        <span class="badge bg-warning text-dark rounded-pill">(860) 321-6543</span>
+      </li>
+    </ul>
+  </div>
+
+  <div class="mt-5">
+    <h3 class="mb-3">Send Us a Message</h3>
+    <form>
+      <div class="mb-3">
+        <label for="helpName" class="form-label">Your Name</label>
+        <input type="text" class="form-control" id="helpName" placeholder="John Doe">
+      </div>
+      <div class="mb-3">
+        <label for="helpEmail" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="helpEmail" placeholder="name@example.com">
+      </div>
+      <div class="mb-3">
+        <label for="helpMessage" class="form-label">Message</label>
+        <textarea class="form-control" id="helpMessage" rows="4" placeholder="Tell us how we can help..."></textarea>
+      </div>
+      <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+  </div>
+
+  <div class="text-center mt-5 text-muted small">
+    We'll get back to you as soon as possible. Your privacy is important to us.
+  </div>
+</div>
